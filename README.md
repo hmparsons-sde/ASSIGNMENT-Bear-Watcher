@@ -21,6 +21,7 @@ https://github.com/hmparsons-sde/ASSIGNMENT-Bear-Watcher/projects/1
 # WIREFRAME
 
 Figma: https://www.figma.com/file/ZeHufLLxlcF6dh9UChCJmw/Bear-Watcher-Holly-Parsons?node-id=9%3A32
+
 Canva: https://bit.ly/3dntQfm
 
 # SCREENSHOTS
