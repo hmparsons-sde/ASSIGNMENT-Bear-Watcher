@@ -37,4 +37,5 @@ Canva: https://bit.ly/3dntQfm
 # DEPLOYED APP
 
 hp-bears.netlify.app
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1c5d82bc-428f-446f-ba43-bc38b4475f54/deploy-status)](https://app.netlify.com/sites/hp-bears/deploys)
