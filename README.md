@@ -16,7 +16,7 @@ To demonstrate proficiency in JavaScript modules, improve applied knowledge of B
 
 https://github.com/hmparsons-sde/ASSIGNMENT-Bear-Watcher/projects/1
 
-# WIREFRAME
+# WIREFRAMES
 
 Figma: https://bit.ly/3uafcxZ
 
