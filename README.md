@@ -22,6 +22,10 @@ Figma: https://bit.ly/3uafcxZ
 
 Canva: https://bit.ly/3dntQfm
 
+# COLOR PALETTE
+
+![bear-palette](https://user-images.githubusercontent.com/67122062/108271644-b859d600-7136-11eb-8119-6fd301c7d99a.png)
+
 # SCREENSHOTS
 
 # CONTRIBUTORS
