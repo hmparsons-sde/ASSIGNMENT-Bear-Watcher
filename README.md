@@ -1,6 +1,4 @@
-# BEAR TRACKER
-
-# PROJECT OBJECTIVES
+# BEAR TRACKER - PROJECT OBJECTIVES
 To demonstrate proficiency in JavaScript modules, improve applied knowledge of Bootstrap and CSS styling, and advance use of DOM manipulation.
 
 # USER STORIES
