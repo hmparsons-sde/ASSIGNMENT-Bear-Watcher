@@ -18,7 +18,7 @@ function bearFormInfo(e) {
 }
 
 const handleButtonClick = () => {
-  document.querySelector('#bear-form').addEventListener('click', bearFormInfo);
+  document.querySelector('#trackBtn').addEventListener('click', bearFormInfo);
 };
 
 export default handleButtonClick;
