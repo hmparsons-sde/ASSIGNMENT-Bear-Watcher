@@ -1,11 +1,11 @@
-import bears from './helpers/data/bearData';
-import bearFormEvent from './components/bearForm';
-import buildABear from './helpers/river';
+import '../styles/main.scss';
+import handleButtonClick from './components/bearForm';
+import { buildABear, bears } from './helpers/river';
 
 const init = () => {
   console.warn('bears!');
-  bearFormEvent();
   buildABear(bears);
+  handleButtonClick();
 };
 
 init();
