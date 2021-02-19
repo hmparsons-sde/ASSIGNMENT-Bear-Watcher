@@ -3,6 +3,12 @@ const printToDOM = (divId, textToPrint) => {
   selectedDiv.innerHTML = textToPrint;
 };
 
+function onClick() {
+  let clicks = 0;
+  clicks += 1;
+  document.getElementById('clicks').innerHTML = clicks;
+}
+
 const buildABear = (arr) => {
   let domString = '';
   for (let i = 0; i < arr.length; i += 1) {
@@ -12,9 +18,9 @@ const buildABear = (arr) => {
                       <p class='card-text' id='name'>${arr[i].name}</p>
                       <div class='card-footer' id='event-buttons'>                                                                           
                       <button type='button' class='btn-attempt' id='attempt-${i}'>Attempt</button>
-                      <button type='increment' class='btn-catch' id='catch-${i}'>Catch</button>
+                      <button type='button' onClick=${onClick} id='catch-${i}'>Catch</button>
                       </div>
-                      <div id='total-catches-${i}'></div>
+                      <p><a id='clicks'>0</a> Fish</p>
                     </div>
                   </div>`;
   }
