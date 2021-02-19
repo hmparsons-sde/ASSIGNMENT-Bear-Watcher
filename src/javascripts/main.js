@@ -1,3 +1,4 @@
+import '../styles/main.scss';
 import handleButtonClick from './components/bearForm';
 import buildABear from './helpers/river';
 import bears from './helpers/data/bearData';
