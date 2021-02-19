@@ -1,4 +1,5 @@
-import { buildABear, bears } from '../helpers/river';
+import bears from '../helpers/data/bearData';
+import buildABear from '../helpers/river';
 
 function bearFormInfo(e) {
   e.preventDefault();
@@ -17,7 +18,7 @@ function bearFormInfo(e) {
 }
 
 const handleButtonClick = () => {
-  document.querySelector('#trackBtn').addEventListener('click', bearFormInfo);
+  document.querySelector('#bear-form').addEventListener('click', bearFormInfo);
 };
 
 export default handleButtonClick;
