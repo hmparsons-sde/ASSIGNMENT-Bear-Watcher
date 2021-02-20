@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 body {
   background-color: #dfd3cc;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron {
+  color: #4F3840;
+  font-weight: bold;
 }
 
 nav {
@@ -10,16 +18,13 @@ nav {
   color: #A6988E;
 }
 
-h2 {
-  color: #4F3840;
+.card {
+  box-shadow: 0 4px 8px 0  #564E30;
+  padding: 20px;
+  text-align: center;
 }
 
 #trackBtn {
   background-color: #4F3840;
   color: #A6988E;
 }
-
-// #A6988E - border color
-// #564E30 - card footer
-// #4F3840 - accents 
-// #271C22 - text
