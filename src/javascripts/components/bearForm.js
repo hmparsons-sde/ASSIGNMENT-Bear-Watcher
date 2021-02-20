@@ -17,8 +17,19 @@ function bearFormInfo(e) {
   document.querySelector('form').reset();
 }
 
+const catchAFish = () => {
+  let count = 0;
+  const countButton = document.getElementById('catch-button');
+  const displayCount = document.getElementById('displayCount');
+  countButton.onclick = () => {
+    count += 1;
+    displayCount.innerHTML = count;
+  };
+};
+
 const handleButtonClick = () => {
   document.querySelector('#bear-form').addEventListener('submit', bearFormInfo);
+  document.querySelector('#catch-button').addEventListener('submit', catchAFish);
 };
 
 export default handleButtonClick;
