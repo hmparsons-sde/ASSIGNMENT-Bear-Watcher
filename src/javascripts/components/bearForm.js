@@ -4,41 +4,36 @@ import buildABear from '../helpers/river';
 const bearFormInfo = (e) => {
   e.preventDefault();
   const name = document.querySelector('#bear-name').value;
-  const imageUrl = document.querySelector('#bear-url').value;
-  const bearId = bears.map((bear) => bear.id).sort((a, b) => a - b);
-  const id = bearId.length ? bearId[bearId.length - 1] + 1 : 1;
+  const image = document.querySelector('#bear-url').value;
+  const catches = [''];
+  const misses = [''];
+
   const obj = {
     name,
-    imageUrl,
-    id,
+    image,
+    catches,
+    misses,
   };
   bears.push(obj);
   buildABear(bears);
-  document.querySelector('form').reset();
 };
 
-const catchAFish = () => {
-  const cards = document.querySelectorAll('.card');
-  console.warn(typeof cards);
-  cards.forEach((item) => item.addEventListener('click', (e) => {
-    if (e.target.type === 'button' && e.target.id.includes('increase')) {
-      const bearId = e.target.id.split('-')[1];
-      console.warn(bearId);
-      const bearToModify = bears.find((bear) => bear.id === parseInt(bearId, 10));
-      bearToModify.count += 1;
-    }
-  }));
+const trackedEvents = (e) => {
+  const button = e.target.className;
+  const index = e.target.id;
+  const time = new Date().toLocaleString();
+  if (e.target.type === 'button' && button.includes('missed')) {
+    bears[index].misses.unshift(time);
+    buildABear(bears);
+  } else if (e.target.type === 'button' && button.includes('caught')) {
+    bears[index].catches.unshift(time);
+    buildABear(bears);
+  }
 };
 
 const handleButtonClick = () => {
   document.querySelector('#bear-form').addEventListener('submit', bearFormInfo);
-  bears.forEach((bear) => {
-    document.getElementById(bear.id).removeEventListener('click', (taco) => catchAFish(taco));
-  });
-  buildABear(bears);
-  bears.forEach((bear) => {
-    document.getElementById(bear.id).addEventListener('click', (taco) => catchAFish(taco));
-  });
+  document.querySelector('#bear-cards').addEventListener('click', trackedEvents);
 };
 
 export default handleButtonClick;
