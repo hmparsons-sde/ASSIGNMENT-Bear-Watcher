@@ -3,20 +3,34 @@ const printToDOM = (divId, textToPrint) => {
   selectedDiv.innerHTML = textToPrint;
 };
 
-const buildABear = (arr) => {
+const buildABear = (bears) => {
   let domString = '';
-  for (let i = 0; i < arr.length; i += 1) {
-    domString += `<div class='card text-center p-2 m-2' style='width: 20rem;' id=${arr[i].id}>
-                    <div class='card-body'>
-                      <img src='${arr[i].imageURL}' style='height:225px;width:225px;' class='rounded-circle pb-3'></img>
-                      <h5 class='card-text font-weight-bold' id='name'>${arr[i].name}</h5>
-                      <p id='fish-count'><span id="counter-number">${arr[i].count}</span> Fish</p>                                                                          
-                      <button type='button' id='attempt-fish'>Attempt 🎣</button>
-                      <button type='button' class='btn increase' id='increase-${arr[i].id}'>Catch 🐟</button>
+  bears.forEach((bear, i) => {
+    const fishes = [];
+    bear.catches.forEach((fish) => fishes.push(fish));
+    domString += `<div class='card p-2 m-2' style='width: 20rem;' id='${i}'>
+                  <div class='card-body'>
+                    <img src='${bear.image}' style='height:225px;width:225px;' class='rounded-circle pb-3'></img>
+                    <h5 class='card-text text-center font-weight-bold mt-3' id='name'>${bear.name}</h5>
+                    <div class='btn-group mt-3'>
+                      <button type='button' class='btn btn-outline-secondary text-center caught m-1' id='${i}'>
+                        Catch 🐟
+                      </button>
+                      <button type='button' class='btn btn-outline-secondary text-center missed m-1' id='${i}'>
+                        Attempt 🎣
+                      </button>
                     </div>
-                  </div>`;
-  }
-
+                  </div>
+                  <p class='card-text'>
+                  <div class='timestamps mb-5'>
+                      Last Catch: ${bear.catches[0]} <br>
+                      Last Attempt: ${bear.misses[0]} <br>
+                      Fish Count: ${fishes.length - 1} <br>
+                  </div>
+                </p>
+              </div>
+            </div>`;
+  });
   printToDOM('bear-cards', domString);
 };
 
