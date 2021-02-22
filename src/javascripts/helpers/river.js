@@ -23,9 +23,9 @@ const buildABear = (bears) => {
                   </div>
                   <p class='card-text'>
                   <div class='timestamps mb-5'>
-                      Last Catch: ${bear.catches[0]} <br>
-                      Last Attempt: ${bear.misses[0]} <br>
-                      Fish Count: ${fishes.length - 1} <br>
+                      Catches: <br>${bear.catches.join('<br>')} <br>
+                      Attempts: <br>${bear.misses.join('<br>')} <br>
+                      Fish Count: ${fishes.length - 1}
                   </div>
                 </p>
               </div>
