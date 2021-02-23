@@ -9,9 +9,7 @@ To demonstrate proficiency in JavaScript modules, improve applied knowledge of B
      in catching a fish.
 - 5. Upon adding a tracked event, the card's stats section will update with time stamped statuses.
 - 6. Each bear's card will display a running tally of successful fish catches.
-- 7. The bear with the highest count of fish catches will also appear in a separate "Awards" section with a gold award. 
-     The second and third highest will display silver and bronze awards, respectively. Ties are allowed.
-     
+
 # PROJECT BOARD
 
 https://github.com/hmparsons-sde/ASSIGNMENT-Bear-Watcher/projects/1
@@ -28,11 +26,18 @@ Canva: https://bit.ly/3dntQfm
 
 # SCREENSHOTS
 
+![landing-page-bears](https://user-images.githubusercontent.com/67122062/108800153-fe100780-7557-11eb-95eb-c08791bf69dd.png)
+![new-card-bear](https://user-images.githubusercontent.com/67122062/108800162-010af800-7558-11eb-8a3f-ebac8a6e428e.png)
+![bear-catch](https://user-images.githubusercontent.com/67122062/108800173-05cfac00-7558-11eb-9b85-6e8c0b476a3c.png)
+![attempt-bear](https://user-images.githubusercontent.com/67122062/108800180-08ca9c80-7558-11eb-82d8-8d3da65def2f.png)
+
 # CONTRIBUTORS
 
 @hmparsons-sde
 
 # LOOM VIDEO
+
+https://www.loom.com/share/745e36805c734c40bd4e433995bcd196
 
 # DEPLOYED APP
 
